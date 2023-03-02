@@ -4,7 +4,7 @@ metadata:
   name: host-pv
 spec:
   capacity: 
-    storage: 1Gi
+    storage: 5Gi
   volumeMode: Filesystem
   storageClassName: standard
   accessModes:
@@ -12,3 +12,5 @@ spec:
   hostPath:
     path: /data
     type: DirectoryOrCreate
+
+  # 199719966
