@@ -26,7 +26,7 @@ router.post(
       userId: req.currentUser!.id,
     });
     await ticket.save();
-console.log(ticket)
+
     await new TicketCreatedPublisher(natsWrapper.client).publish({
       id: ticket.id,
       title: ticket.title,
